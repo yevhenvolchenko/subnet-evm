@@ -104,6 +104,8 @@ type Config struct {
 
 	// VM2VM network
 	MaxOutboundActiveRequests int64 `json:"max-outbound-active-requests"`
+	// Address for Tx Fees (must be empty if not supported by blockchain)
+	FeeRecipient string `json:"feeRecipient"`
 }
 
 // EthAPIs returns an array of strings representing the Eth APIs that should be enabled
